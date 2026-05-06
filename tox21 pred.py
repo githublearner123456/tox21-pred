@@ -288,7 +288,7 @@ def train_one_epoch(loader, model, optimizer, pos_weight, device, grad_clip, epo
 # --------------------- 主程序 --------------------
 if __name__ == "__main__":
     # 加载数据
-    df = pd.read_csv(r"C:\Users\16544\Desktop\tox21.csv")  # 请修改为实际路径
+    df = pd.read_csv(r"C:\Users\16544\Desktop\tox21.csv")
     smiles_list = df["smiles"].values
     labels = df.drop(["smiles", "mol_id"], axis=1).values
     valid_smiles = []
